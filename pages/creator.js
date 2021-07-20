@@ -1,4 +1,5 @@
 import styles from "../styles/dom.module.css";
+import Image from "next/image";
 
 const DOM = ({ developer }) => {
   console.log(developer);
@@ -8,7 +9,7 @@ const DOM = ({ developer }) => {
       <div className={styles.developer}>
         <h3> {developer.name} </h3>
         <h6> {developer.position} </h6>
-        <img src={developer.image} alt="creator-image" />
+        <Image src={developer.image} alt="creator-image" />
         <p>{developer.description}</p>
       </div>
     </div>

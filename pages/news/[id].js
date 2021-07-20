@@ -1,5 +1,6 @@
 import styles from "../../styles/news.module.css";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const News = ({ articles, pageNumber }) => {
   const router = useRouter();
@@ -12,7 +13,7 @@ const News = ({ articles, pageNumber }) => {
               {article.title}
             </h1>
             <p>{article.description}</p>
-            {!!article.urlToImage && <img src={article.urlToImage} />}
+            {!!article.urlToImage && <Image src={article.urlToImage} />}
           </div>
         ))}
       </div>
