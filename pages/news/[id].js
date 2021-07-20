@@ -13,7 +13,7 @@ const News = ({ articles, pageNumber }) => {
               {article.title}
             </h1>
             <p>{article.description}</p>
-            {!!article.urlToImage && <Image src={article.urlToImage} />}
+            {!!article.urlToImage && <img src={article.urlToImage} />}
           </div>
         ))}
       </div>
