@@ -9,7 +9,7 @@ const DOM = ({ developer }) => {
       <div className={styles.developer}>
         <h3> {developer.name} </h3>
         <h6> {developer.position} </h6>
-        <Image src={developer.image} alt="creator-image" layout="fill" />
+        <img src={developer.image} alt="creator-image" />
         <p>{developer.description}</p>
       </div>
     </div>

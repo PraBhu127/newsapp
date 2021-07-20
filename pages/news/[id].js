@@ -14,7 +14,7 @@ const News = ({ articles, pageNumber }) => {
             </h1>
             <p>{article.description}</p>
             {!!article.urlToImage && (
-              <Image src={article.urlToImage} layout="fill" />
+              <img src={article.urlToImage} alt="news app " />
             )}
           </div>
         ))}
