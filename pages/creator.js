@@ -5,11 +5,17 @@ const DOM = ({ developer }) => {
   console.log(developer);
   return (
     <div className={styles.main}>
-      <h1>Developer of Month</h1>
+      <h1>Creator</h1>
       <div className={styles.developer}>
         <h3> {developer.name} </h3>
         <h6> {developer.position} </h6>
-        <Image src={developer.image} alt="creator-image" layout="fill" />
+        <Image
+          unoptimized="true"
+          src={developer.image}
+          alt="creator-image"
+          height="200"
+          width="200"
+        />
         <p>{developer.description}</p>
       </div>
     </div>
